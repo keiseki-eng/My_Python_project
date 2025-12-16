@@ -1,0 +1,63 @@
+# 特徴量リストの定義
+FEATURE:
+  "FEATURE_LIST":
+    [ 
+    "total_floor_area", 
+    "building_area", 
+    "building_structure", 
+    "building_land_area", 
+    "land_area_all", 
+    "land_youto",  
+   # "land_toshi", # "land_chisei", 
+ # "land_road_cond",
+   "management_form",  # "reform_exterior_date"
+   "room_count", 
+   "unit_area", 
+   "floor_plan_code", 
+   "reform_date", 
+   "reform_wet_area_date", 
+   "reform_interior_date", 
+   "renovation_date", 
+   "post1", 
+   "addr1_1", 
+    "bus_time1", 
+   "walk_distance1", 
+   "bus_time2", 
+   "walk_distance2",
+   "house_kanrinin",
+   "madori_number_all",
+   "money_rimawari_now",
+   "parking_distance",
+   "school_ele_distance", 
+   "school_jun_distance", 
+   "convenience_distance", 
+    "super_distance", 
+   "hospital_distance", 
+   "park_distance", 
+   "drugstore_distance", 
+   "bank_distance", 
+   "building_type",
+   ]
+  "CATEGORICAL_COLS":
+   [
+   "building_structure", 
+   "management_form", 
+   "floor_plan_code", 
+   "house_kanrinin", 
+   "land_youto", 
+   "building_type"
+   ]
+
+# LightGBM のパラメータ設定
+MODEL_PARAMS:
+    'objective': 'regression' # 二値分類ではなく、確率を求める回帰に。
+    'metric': 'mae'
+    'boosting_type': 'gbdt'
+    'num_leaves': 31
+    "max_depth": -1
+    "min_data_in_leaf": 50  # ← ここが重要
+    'learning_rate': 0.05
+    'feature_fraction': 0.7
+    'bagging_fraction': 0.8
+    'bagging_freq': 5
+    'verbose': 0
