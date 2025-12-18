@@ -21,6 +21,7 @@ FEATURE:
     'reform_interior_date',
     'post1',
     'addr1_1',
+    'addr1_2', 
     'bus_time1',
     'walk_distance1',
     'bus_time2',
