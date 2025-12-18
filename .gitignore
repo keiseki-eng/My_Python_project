@@ -9,3 +9,12 @@ venv/
 *.pkl
 
 *pyc
+
+
+# 実行結果
+output/
+*.log
+*.tmp
+*.parquet
+
+*.ipynb_checkpoints/
