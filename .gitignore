@@ -18,3 +18,5 @@ output/
 *.parquet
 
 *.ipynb_checkpoints/
+
+10.Notebook/不動産予測.ipynb
