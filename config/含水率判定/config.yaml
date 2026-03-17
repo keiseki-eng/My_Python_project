@@ -4,6 +4,7 @@ FEATURE:
     [
     # "sample number",
     "species number",
+    "樹種",
     "9993.76781",
     "9989.9107",
     "9986.05359",
@@ -1575,13 +1576,9 @@ FEATURE:
       ]
   "CATEGORICAL_COLS":
    [
-   # "building_structure", 
-   # "management_form", 
-   # "floor_plan_code", 
-   # "house_kanrinin", 
-   # "land_youto", 
-   # "building_type",
-   # "addr1+2"
+   # "sample number",
+   "species number",
+   "樹種",
    ]
 
 # LightGBM のパラメータ設定
