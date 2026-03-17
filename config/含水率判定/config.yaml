@@ -2,7 +2,7 @@
 FEATURE:
   "FEATURE_LIST":
     [
-    "sample number",
+    # "sample number",
     "species number",
     "9993.76781",
     "9989.9107",
