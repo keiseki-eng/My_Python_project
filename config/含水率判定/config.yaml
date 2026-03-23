@@ -5,6 +5,7 @@ FEATURE:
     # "sample number",
     "species number",
     "樹種",
+    "科目", 
     "9993.76781",
     "9989.9107",
     "9986.05359",
@@ -1579,6 +1580,7 @@ FEATURE:
    # "sample number",
    "species number",
    "樹種",
+   "科目", 
    ]
 
 # LightGBM のパラメータ設定
