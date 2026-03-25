@@ -1583,7 +1583,7 @@ FEATURE:
    # "species number",
    # "樹種",
    "科目", 
-   "針葉樹", 
+   # "針葉樹", 
    ]
 
 # LightGBM のパラメータ設定
